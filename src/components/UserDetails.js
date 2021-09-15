@@ -1,11 +1,11 @@
 
 
-const cardStyle = {
+/* const cardStyle = {
     border:'solid grey 1px',
     margin:'auto',
     width:'40%',
     padding:'15px'
-}
+} */
 
 const UserDetails = ({user:{
     name,
@@ -19,7 +19,7 @@ const UserDetails = ({user:{
 
 }}) => {
     return (
-        <div style={cardStyle}>
+        <div className='userdetail'>
                 - name : {name}<br/>
                 - username : {username}<br/>
                 - email : {email}<br/>

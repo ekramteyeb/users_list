@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const buttonStyle = {
+/* const buttonStyle = {
    padding:'5px', 
    backgroundColor:'#4185F3',
    color:'white',
@@ -9,12 +9,15 @@ const buttonStyle = {
    border:'none',
    margin:'25px 0px 0px ',
    textDecoration:'none'
-}
+} */
 
 const Button = ({id, handleClick, name}) => {
     return (
         <div>
-            <Link  to={`/users/${id}`} onClick={handleClick} style={buttonStyle}>
+            <Link  
+                to={`/users/${id}`} 
+                onClick={handleClick} 
+                className='buttonStyle'>
                 {name}
             </Link>
         </div>

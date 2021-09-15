@@ -1,6 +1,6 @@
 import Button from './Button'
 
-const style = {
+/* const style = {
     width:'25%',
     border:'solid #E5E5E5 1px',
     padding:'10px',
@@ -8,7 +8,7 @@ const style = {
     textAlign:'center',
     display: 'inline-block',
     borderRadius:'0.5em'
-}
+} */
 
 const Card = ({user:{
     name,
@@ -25,8 +25,8 @@ const Card = ({user:{
     }
 }, handleClick, id}) => {
     return (
-        <div style={style}>
-            <div style={{width:'50px', height:'50px', margin:'auto',backgroundColor:'#E5E5E5', borderRadius:'50%', border:'solid #E5E5E5 1px'}}>
+        <div className='card'>
+            <div className='cardFoto'>
                 <p>{name.slice(0,1).toUpperCase()}</p>
             </div><br/>
             <span style={{fontWeight:'bold'}}>{name}</span><br/>
