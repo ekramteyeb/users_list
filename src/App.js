@@ -1,5 +1,6 @@
 import './App.css';
 import {useState, useEffect} from 'react'
+import Button from './components/Button'
 import {
   BrowserRouter as Router, Switch, Route
 } from 'react-router-dom'
@@ -37,8 +38,13 @@ function App() {
             {users.length > 0 ? users.map(user => <Card key={user.id} user={user} id={user.id} />) : '' }
           </Route>
          <Route path='/users/:id'>
+         <div style={{textAlign:'center'}}>
+            <h3>User details: </h3>
+            <ExploreUsers data={users}/>
+            <Button name='Go  Back ' id=''/>
+         </div>
           
-          <ExploreUsers data={users}/>
+          
       
          </Route>
 
